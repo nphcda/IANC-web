@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", "sans-serif";
+}
+th,
+td {
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+.progress-bar {
+  width: 280px;
+  height: 8px;
+  background-color: rgba(110, 168, 254, 0.4);
+  border-radius: 5px;
+  margin-top: 28px;
+}
+/* select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: red;
+  width: 200px;
+  font-size: 16px;
+} */
+
+.progress-bar .progress-bar-fill {
+  height: 100%;
+  background-color: #14a673;
+  border-radius: 5px;
+  animation: progress-animation 4s linear;
+}
+@keyframes progress-animation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.gradientbg {
+  background: linear-gradient(
+      0deg,
+      rgba(2, 125, 82, 0.8) 0%,
+      rgba(2, 125, 82, 0.8) 100%
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+    linear-gradient(0deg, rgba(2, 125, 82, 0.2) 0%, rgba(2, 125, 82, 0.2) 100%);
+}
+.registerbtngrad {
+  border-radius: 8px;
+  background: linear-gradient(180deg, #028c5c 0%, #06ce89 100%);
+  padding: 16px 26px;
+}
+.createbtn {
+  border-radius: 100px;
+  padding: 16px 26px;
+}
+.adminmenu {
+  max-height: 100vh;
+  height: auto;
+  position: sticky;
+  top: 0px;
+  /* flex: 1; */
+}
+.backbtn {
+  border-radius: 8px;
+  padding: 16px 26px;
+}
+.spinner {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-top: 4px solid #14a673;
+  border-right: 4px solid rgba(110, 168, 254, 0.4);
+  animation: spinner 0.6s linear infinite;
+}
+.loader {
+  animation: spinner 0.6s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* .myselect option {
+  background-color: #06ce89;
+} */
+/* Customize the scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 2px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+/* .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+} */
+table {
+  /* border-collapse: separate; */
+  /* border-spacing: 10px; */
+}
